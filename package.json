@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "lit-element": "^2.0.1",
-    "lit-element-router": "^1.2.5"
+    "lit-element": "^2.2.1",
+    "lit-element-router": "2.0.0-rc.0"
   }
 }

@@ -45,7 +45,7 @@ class MyApp extends routerMixin(LitElement) {
     this.params = {};
   }
 
-  onRoute(route, params, query, data) {
+  router(route, params, query, data) {
     this.route = route;
     this.params = params;
     console.log(route, params, query, data)
