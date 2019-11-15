@@ -13,7 +13,7 @@ import { routerMixin } from 'lit-element-router'
 import './app-link';
 import './app-main';
 
-class MyApp extends routerMixin(LitElement) {
+class App extends routerMixin(LitElement) {
 
   static get properties() {
     return {
@@ -57,7 +57,7 @@ class MyApp extends routerMixin(LitElement) {
       <app-link href="/info">Info</app-link>
       <app-link href="/user/14">user/14</app-link>
 
-      <app-main current-route=${this.route}>
+      <app-main active-route=${this.route}>
           <h1 route='home'>Home</h1>
           <h1 route='info'>Info</h1>
           <h1 route='user'>User ${this.params.id} </h1>
@@ -67,4 +67,4 @@ class MyApp extends routerMixin(LitElement) {
   }
 }
 
-customElements.define('my-app', MyApp);
+customElements.define('my-app', App);

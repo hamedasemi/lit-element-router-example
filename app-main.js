@@ -1,7 +1,7 @@
 import { LitElement, html } from 'lit-element'
-import { routerOutletMixin } from 'lit-element-router'
+import { outletMixin } from 'lit-element-router'
 
-export class Main extends routerOutletMixin(LitElement) {
+export class Main extends outletMixin(LitElement) {
     render() {
       return html`
         <slot></slot>

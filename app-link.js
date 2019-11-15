@@ -1,7 +1,7 @@
 import { LitElement, html } from 'lit-element'
-import { routerLinkMixin } from 'lit-element-router'
+import { linkMixin } from 'lit-element-router'
 
-export class Link extends routerLinkMixin(LitElement) {
+export class Link extends linkMixin(LitElement) {
     static get properties() {
         return {
             href: { type: String }
