@@ -13,7 +13,9 @@ export class Link extends linkMixin(LitElement) {
     }
     render() {
         return html`
-            <a href='${this.href}' @click='${this.linkClick}'><slot></slot></a>
+            <a href='${this.href}' @click='${this.linkClick}'>
+              <slot></slot>
+            </a>
         `;
     }
     linkClick(event) {
