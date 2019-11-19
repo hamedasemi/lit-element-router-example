@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit-element';
+import { LitElement, html, css } from 'lit-element';
 import { linkMixin } from 'lit-element-router';
 
 export class Link extends linkMixin(LitElement) {
@@ -6,6 +6,11 @@ export class Link extends linkMixin(LitElement) {
         return {
             href: { type: String }
         };
+    }
+    static get styles() {
+        return css`
+          a { margin: 5px; }
+        `;
     }
     constructor() {
         super();
