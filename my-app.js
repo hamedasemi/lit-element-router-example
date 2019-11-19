@@ -5,10 +5,10 @@
  * https://www.npmjs.com/package/lit-element-router
  */
 
-import { } from '@webcomponents/webcomponentsjs/webcomponents-loader.js'
+import { } from '@webcomponents/webcomponentsjs/webcomponents-loader.js';
 
-import { LitElement, html } from 'lit-element'
-import { routerMixin } from 'lit-element-router'
+import { LitElement, html } from 'lit-element';
+import { routerMixin } from 'lit-element-router';
 
 import './app-link';
 import './app-main';
@@ -20,7 +20,7 @@ class App extends routerMixin(LitElement) {
       route: { type: String },
       params: { type: Object },
       query: { type: Object }
-    }
+    };
   }
 
   static get routes() {
@@ -51,7 +51,7 @@ class App extends routerMixin(LitElement) {
     this.route = route;
     this.params = params;
     this.query = query;
-    console.log(route, params, query, data)
+    console.log(route, params, query, data);
   }
 
   render() {
@@ -67,7 +67,7 @@ class App extends routerMixin(LitElement) {
           <h1 route='user'>User ${this.params.id} </h1>
           <h1 route='not-found'>Not Found </h1>
       </app-main>
-    `
+    `;
   }
 }
 

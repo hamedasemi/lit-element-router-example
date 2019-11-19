@@ -1,5 +1,5 @@
-import { LitElement, html } from 'lit-element'
-import { linkMixin } from 'lit-element-router'
+import { LitElement, html } from 'lit-element';
+import { linkMixin } from 'lit-element-router';
 
 export class Link extends linkMixin(LitElement) {
     static get properties() {
