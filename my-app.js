@@ -8,12 +8,13 @@
 import {} from "@webcomponents/webcomponentsjs/webcomponents-loader.js";
 
 import { LitElement, html } from "lit-element";
-import { routerMixin } from "lit-element-router";
+import { router } from "lit-element-router";
 
 import "./app-link";
 import "./app-main";
 
-class App extends routerMixin(LitElement) {
+@router
+class App extends LitElement {
   static get properties() {
     return {
       route: { type: String },
